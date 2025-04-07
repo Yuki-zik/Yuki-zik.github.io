@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUAP - Yuki Zik</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- 引用主站点的样式（如果有） -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .abstract, .workflow, .audio-comparison {
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        audio {
+            width: 100%;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题 -->
+        <h1>DUAP：你的项目标题</h1>
+
+        <!-- 摘要 -->
+        <section class="abstract">
+            <h2>[Github]</h2>
+            <p>发布：Yuki Zik</p>
+            <p>摘要：这里是你的项目简介，介绍 DUAP 的背景和用途...</p>
+            <ul>
+                <li>DUAP 工作流程</li>
+                <li>核心功能</li>
+                <li>技术亮点</li>
+            </ul>
+        </section>
+
+        <!-- 工作流程图 -->
+        <section class="workflow">
+            <h2>DUAP 工作流程</h2>
+            <img src="workflow-diagram.png" alt="DUAP 工作流程图">
+            <p>图 1. DUAP 的工作流程说明...</p>
+        </section>
+
+        <!-- 音频或示例（可选） -->
+        <section class="audio-comparison">
+            <h2>示例展示</h2>
+            <p>这里可以展示你的项目成果，例如音频、图片或其他内容...</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>类型</th>
+                        <th>示例 1</th>
+                        <th>示例 2</th>
+                        <th>示例 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>原始数据</td>
+                        <td><audio controls><source src="original-1.mp3" type="audio/mp3"></audio></td>
+                        <td><audio controls><source src="original-2.mp3" type="audio/mp3"></audio></td>
+                        <td><audio controls><source src="original-3.mp3" type="audio/mp3"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>处理后数据</td>
+                        <td><audio controls><source src="processed-1.mp3" type="audio/mp3"></audio></td>
+                        <td><audio controls><source src="processed-2.mp3" type="audio/mp3"></audio></td>
+                        <td><audio controls><source src="processed-3.mp3" type="audio/mp3"></audio></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 返回主页链接 -->
+        <p><a href="../index.html">返回主页</a></p>
+    </div>
+</body>
+</html>
