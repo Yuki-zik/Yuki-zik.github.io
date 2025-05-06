@@ -46,6 +46,7 @@
 	<b>Contents</b>
       <ul>
         <li><a href="#duap-workflow">DUAP Workflow</a></li>
+        <li><a href="#duap-scenario">DUAP Scenarios for Protecting Speech Privacy</a></li>
 		<li><a href="#real-samples">Original and Protected Speech</a></li>
         <li><a href="#multilingual">Multilingual Protection Effectiveness</a></li>
         <li><a href="#robustness">Robustness Against Compression</a></li>
@@ -60,12 +61,29 @@
 	<h2 id="duap-workflow" style="text-align: center;">DUAP Workflow</h2>
 	<body>
 	<p style="text-align: center;">
-		<img src="pics/workflow.png" height="400" width="800">
+		<img src="pics/workflow.png" height="400" width="1000">
 	</p>
 	</body>
 		<p style="text-align: center;" >
 			<b>Figure 1.</b> Overview of the proposed Language Feature Disentanglement that models adversarial attacks as a feature disentanglement and swap-reconstruction process. In the attack process, dual encoders disentangle language and content features, then swap-reconstruction embeds target language features into the source mel, producing transformed.source.mel as the adversarial sample.
 		</p>
+</div>
+
+<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">		
+	<h2 id="duap-scenario" style="text-align: center;">DUAP Scenarios for Protecting Speech Privacy</h2>
+	<div class="row">
+		<div class="col-md-6 text-center">
+			<img src="pics/Digital scenario.png" class="img-fluid" style="max-width: 100%; height: auto;">
+			<p><b>(a)</b> Digital scenario</p>
+		</div>
+		<div class="col-md-6 text-center">
+			<img src="pics/Physical scenario.png" class="img-fluid" style="max-width: 100%; height: auto;">
+			<p><b>(b)</b> Physical scenario</p>
+		</div>
+	</div>
+	<p style="text-align: center;">
+		<b>Figure 2:</b> DUAP Scenarios for Protecting Speech Privacy. (a) Digital scenario: A short perturbation is superposed to the source audio segment before transmission to disrupt the Whisper model. (b) Physical scenario: A speaker intermittently plays perturbations overlaid on the original audio to counter covert microphones.
+	</p>
 </div>
 
 
