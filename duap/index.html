@@ -1,108 +1,281 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DUAP - Yuki Zik</title>
-    <link rel="stylesheet" href="../styles.css"> <!-- 引用主站点的样式（如果有） -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .abstract, .workflow, .audio-comparison {
-            margin-bottom: 40px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        audio {
-            width: 100%;
-            max-width: 300px;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.88.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<title>DUAP</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
 </head>
-<body>
-    <div class="container">
-        <!-- 标题 -->
-        <h1>DUAP：你的项目标题</h1>
 
-        <!-- 摘要 -->
-        <section class="abstract">
-            <h2>[Github]</h2>
-            <p>发布：Yuki Zik</p>
-            <p>摘要：这里是你的项目简介，介绍 DUAP 的背景和用途...</p>
-            <ul>
-                <li>DUAP 工作流程</li>
-                <li>核心功能</li>
-                <li>技术亮点</li>
-            </ul>
-        </section>
 
-        <!-- 工作流程图 -->
-        <section class="workflow">
-            <h2>DUAP 工作流程</h2>
-            <img src="workflow-diagram.png" alt="DUAP 工作流程图">
-            <p>图 1. DUAP 的工作流程说明...</p>
-        </section>
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
 
-        <!-- 音频或示例（可选） -->
-        <section class="audio-comparison">
-            <h2>示例展示</h2>
-            <p>这里可以展示你的项目成果，例如音频、图片或其他内容...</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>类型</th>
-                        <th>示例 1</th>
-                        <th>示例 2</th>
-                        <th>示例 3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>原始数据</td>
-                        <td><audio controls><source src="original-1.mp3" type="audio/mp3"></audio></td>
-                        <td><audio controls><source src="original-2.mp3" type="audio/mp3"></audio></td>
-                        <td><audio controls><source src="original-3.mp3" type="audio/mp3"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>处理后数据</td>
-                        <td><audio controls><source src="processed-1.mp3" type="audio/mp3"></audio></td>
-                        <td><audio controls><source src="processed-2.mp3" type="audio/mp3"></audio></td>
-                        <td><audio controls><source src="processed-3.mp3" type="audio/mp3"></audio></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+<div class="container" >
+<header role="banner">
+</header>
+<main role="main">
+<article itemscope itemtype="https://schema.org/BlogPosting">
 
-        <!-- 返回主页链接 -->
-        <p><a href="../index.html">返回主页</a></p>
-    </div>
+<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
+	<div class="text-center">
+	<h2>DUAP: </h2>
+      <h3>Disentanglement-based Universal Adversarial Perturbations for Robust Multilingual Speech Privacy Protection</h3>
+      [<a href="#">Paper</a>][<a href="#">GitHub</a>]
+
+        <p class="fst-italic mb-0">
+      <p></p>
+        </p>
+        <p>Qianli Ma, Wenjie Zhang, Jiahao Chen, Jiazhen Jia, Rangding Wang, Diqun Yan, Member, IEEE</p>
+	</div>
+	<p><b>Abstract:</b> 
+	The rapid advancement of automatic speech recognition (ASR) models has significantly bolstered their multilingual proficiency and robustness, amplifying concerns over user speech privacy. Attackers may use hidden microphones or network attacks to capture and transcribe sensitive user interactions. Whisper, a state-of-the-art (SOTA) multilingual speech recognition model, delivers exceptional transcription accuracy across diverse languages. However, its superior performance also extends privacy leakage risks to multilingual contexts. Previous privacy-preserving methods based on adversarial examples were primarily optimized for monolingual models, limiting their effectiveness in multilingual settings. Moreover, as these perturbation mechanisms were predominantly tailored for English, their transferability to other languages remains constrained.
+	</p>
+	<p>
+	To address this vulnerability, we propose the Disentanglement-based Universal Adversarial Perturbation (<b><em>DUAP</em></b>), a privacy-preserving method designed to counteract the Whisper model. Unlike optimization-based approaches, DUAP embeds language-specific features in the latent space to generate robust adversarial perturbations, providing consistent protection across multiple languages and effectively mitigating privacy risks in multilingual contexts. The method employs a two-stage language attack: first, a Language Feature Disentanglement (LFD) model disentangles and reconstructs language-specific features to produce adversarial examples (AEs); second, gradient-based optimization refines AEs to disrupt Whisper's language identification(LID) module. DUAP's perturbations, effective in physical and digital settings, achieve SNRs from 40 dB (lightest) to above 17 dB (strongest). Across three Whisper model sizes, DUAP yields WERs over 95% (English), 85% (other languages), and 87% (physical settings), maintaining above 96% under AAC (64, 72 kbps) and MP3 (32, 96 kbps) compressions.
+	</p>
+
+	<p>
+	<b>Contents</b>
+      <ul>
+        <li><a href="#duap-workflow">DUAP Workflow</a></li>
+		<li><a href="#real-samples">Original and Protected Speech</a></li>
+        <li><a href="#multilingual">Multilingual Protection Effectiveness</a></li>
+        <li><a href="#robustness">Robustness Against Compression</a></li>
+      </ul>
+	</p>
+
+	
+</div>
+
+
+<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">		
+	<h2 id="duap-workflow" style="text-align: center;">DUAP Workflow</h2>
+	<body>
+	<p style="text-align: center;">
+		<img src="pics/workflow.png" height="400" width="800">
+	</p>
+	</body>
+		<p style="text-align: center;" >
+			<b>Figure 1.</b> Overview of the proposed Language Feature Disentanglement that models adversarial attacks as a feature disentanglement and swap-reconstruction process. In the attack process, dual encoders disentangle language and content features, then swap-reconstruction embeds target language features into the source mel, producing transformed.source.mel as the adversarial sample.
+		</p>
+</div>
+
+
+<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
+	<h2 id="real-samples" style="text-align: center;">Original and Protected Speech</h2>
+	<div class="table-responsive pt-3">
+		<div class="text-center">
+			<p>These samples demonstrate original speech and DUAP-protected speech in English.</p>
+		</div>
+		<table class="table table-hover pt-2">
+			<thead>
+				<tr>
+					<th style="vertical-align: middle;text-align: center;"></th>
+					<th style="vertical-align: middle;text-align: center;">Method</th>
+					<th style="vertical-align: middle;text-align: center;">Sample 1</th>
+					<th style="vertical-align: middle;text-align: center;">Sample 2</th>
+					<th style="vertical-align: middle;text-align: center;">Sample 3</th>
+				</tr>
+				<tbody>
+					<tr>
+						<td style="vertical-align : middle;text-align:center;" rowspan="1">Original</td>
+						<td style="vertical-align: middle;text-align: center;"></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_clean_79.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_clean_105.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_clean_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+
+					<tr>
+						<td style="vertical-align : middle;text-align:center;" rowspan="6">Protected</td>
+						<td style="vertical-align: middle;text-align: center;">Random Noise</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_random-noise_79.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_random-noise_105.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_random-noise_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">DUAP Light (Concatenation)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_AdvPoison_79.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_AdvPoison_105.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_AdvPoison_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">DUAP Moderate (Concatenation)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_SEP_79.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_SEP_105.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_SEP_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">DUAP Strong (Concatenation)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_PTA_79.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_PTA_105.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_PTA_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">DUAP Strong (Superposition)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_AttackVC_79.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_AttackVC_105.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/1_real_samples/0_AttackVC_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+				</tbody>
+			</thead>
+		</table>
+	</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
+	<h2 id="multilingual" style="text-align: center;">Multilingual Protection Effectiveness</h2>
+	<div class="table-responsive pt-3">
+		<div class="text-center">
+			<p><b>Whisper Small Model</b></p>
+		</div>
+		<table class="table table-hover pt-2">
+			<thead>
+				<tr>
+					<th style="vertical-align: middle;text-align: center;">Language</th>
+					<th style="vertical-align: middle;text-align: center;">Original</th>
+					<th style="vertical-align: middle;text-align: center;">DUAP (SNR 40dB)</th>
+					<th style="vertical-align: middle;text-align: center;">DUAP (SNR 25dB)</th>
+				</tr>
+				<tbody>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">English</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/clean_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/random-noise_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/AdvPoison_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">Korean</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/clean_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/random-noise_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/AdvPoison_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">French</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/clean_0_5339_24.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/random-noise_0_5339_24.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/AdvPoison_0_5339_24.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">German</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/SEP_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/PTA_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/SPEC_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">Chinese</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/SEP_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/PTA_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/SPEC_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+				</tbody>
+			</thead>
+		</table>
+
+		<div class="text-center">
+			<br>
+			<p><b>Whisper Model Size Comparison</b></p>
+		</div>
+		<table class="table table-hover pt-2">
+			<thead>
+				<tr>
+					<th style="vertical-align: middle;text-align: center;">Model Size</th>
+					<th style="vertical-align: middle;text-align: center;">Method</th>
+					<th style="vertical-align: middle;text-align: center;">English as target</th>
+					<th style="vertical-align: middle;text-align: center;">French as target</th>
+				</tr>
+				<tbody>
+					<tr>
+						<td style="vertical-align : middle;text-align:center;" rowspan="2">Whisper Tiny</td>
+						<td style="vertical-align: middle;text-align: center;">Original</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part2_Other Models/StyleTTS2_clean_0_5339_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part2_Other Models/StyleTTS2_clean_0_5339_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;"><b>DUAP</b></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part2_Other Models/StyleTTS2_SPEC_0_5339_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part2_Other Models/StyleTTS2_SPEC_0_5339_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+
+					<tr>
+						<td style="vertical-align : middle;text-align:center;" rowspan="2">Whisper Medium</td>
+						<td style="vertical-align: middle;text-align: center;">Original</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/AttackVC_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/AttackVC_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;"><b>DUAP</b></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/AntiFake_0_5339_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/2_deepfake_fine-tuning/part1_BERT-VITS2/AntiFake_0_5339_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					</tr>
+				</tbody>
+			</thead>
+		</table>
+	</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
+	<h2 id="robustness" style="text-align: center;">Robustness Against Compression</h2>
+	<div class="table-responsive pt-3">
+		<div class="text-center">
+			<p>DUAP maintains high protection effectiveness even after audio compression.</p>
+		</div>
+		<table class="table table-hover pt-2">
+			<thead>
+				<tr>
+					<th style="vertical-align: middle;text-align: center;">Compression</th>
+					<th style="vertical-align: middle;text-align: center;">Original</th>
+					<th style="vertical-align: middle;text-align: center;">DUAP</th>
+					<th style="vertical-align: middle;text-align: center;">WER Score</th>
+				</tr>
+				<tbody>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">None</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/line1_original/clean_0_5339_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/linex_synthesized/0_PTA_5339_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align: middle;text-align: center;">98.7%</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">MP3 (96 kbps)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/line1_original/clean_0_5339_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/linex_synthesized/0_PTA_5339_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align: middle;text-align: center;">97.3%</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">MP3 (32 kbps)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/line1_original/clean_0_5339_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/linex_synthesized/0_PTA_5339_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align: middle;text-align: center;">96.2%</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">AAC (72 kbps)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/line1_original/clean_0_5339_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/linex_synthesized/0_PTA_5339_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align: middle;text-align: center;">97.1%</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: middle;text-align: center;">AAC (64 kbps)</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/line1_original/clean_0_5339_4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 300px;"><source src="audios/3_deepfake_zero-shot/linex_synthesized/0_PTA_5339_4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align: middle;text-align: center;">96.5%</td>
+					</tr>
+				</tbody>
+			</thead>
+		</table>
+	</div>
+</div>
+
+</article>
+</main>
+
+</div>
 </body>
+
 </html>
